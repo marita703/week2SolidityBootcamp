@@ -1272,9 +1272,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"Week2Monday@workspace:.":
+"HelloWorldExample@workspace:.":
   version: 0.0.0-use.local
-  resolution: "Week2Monday@workspace:."
+  resolution: "HelloWorldExample@workspace:."
   dependencies:
     "@ethersproject/abi": ^5.4.7
     "@ethersproject/providers": ^5.4.7

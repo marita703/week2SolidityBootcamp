@@ -1,5 +1,5 @@
 {
-  "name": "Week2Monday",
+  "name": "HelloWorldExample",
   "packageManager": "yarn@3.5.1",
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",

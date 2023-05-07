@@ -123,7 +123,7 @@ describe("test3", () => {
     expect(text).to.equal(initialText);
 
     await expect(
-      helloWorldContract.changeText(newText, {
+      helloWorldContract.setText(newText, {
         from: accounts[1].address,
       })
     ).to.be.revertedWith("Ownable: caller is not the owner");
@@ -135,11 +135,9 @@ describe("test3", () => {
     await helloWorldContract.deployed();
     const accounts = await ethers.getSigners();
 
-    const text = await helloWorldContract.helloWorld();
-    const initialText = "Hello World!";
     const newText = "Maria";
 
-    await helloWorldContract.changeText(newText, {
+    await helloWorldContract.setText(newText, {
       from: accounts[0].address,
     });
 
