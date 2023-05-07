@@ -43,6 +43,18 @@ describe("test2", () => {
 
 describe("test3", () => {
   // it will organize the code.
+
+  //   This line is added from class 7"
+  let helloWorldContract: HelloWorld;
+
+  beforeEach(async () => {
+    const helloWorldFactory = await ethers.getContractFactory("HelloWorld");
+    const helloWorldContract = (await helloWorldFactory.deploy()) as HelloWorld;
+    await helloWorldContract.deployed();
+
+    //so we do not have to repeat this code in each test.
+  });
+
   it("Should give a Hello World", async () => {
     // throw new Error("This is an error message"); if I do this, then it will throw an error.
     expect(true).to.equal(true); // this is a tests that is true... and passes when i run the tests.
